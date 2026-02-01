@@ -1,0 +1,19 @@
+#backBtn {
+    text-align: left;
+    font-size: 120%;
+}
+
+#backBtn:link,
+#backBtn:visited {
+    background-color: #ff5500;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#backBtn:hover,
+#backBtn:active {
+    background-color: red;
+}

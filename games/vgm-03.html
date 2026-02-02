@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/styles/gameBtns.css">
+
+    <script>
+        // all game pages uses this same function
+        function downloadThis() {
+            window.location.href = "gamefiles/VTD.zip"; // download this game - format is "gamefiles/GAME.zip" where "GAME" is this game
+        }
+    </script>
+    <script src="../UniVens.js"></script>
+    <title>VTD – Venison</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <button type="button" onclick="ToGames()">Back to Games</button>
+    <h1>VTD</h1>
+    <img src="game_logos/VTD_icon.png" style="width:64px;height:64px;" alt="VTD"> <!-- can also use "/games/game_logos/..." -->
+    <p style="font-size: 150%;">
+        Also known as Venison Tower Defense. <br>
+        Build towers to stop the various colored enemies from escaping. 
+        There are several tracks you can choose from, and multiple game modes for each track.
+    </p>
+    <br>
+    <!--
+        <button id="dloadBtn" type="button" onclick="downloadThis()">Click to Download</button>
+        <p>This version can be played until <i>December 31, 2027</i>.</p>
+    --><p style="color: #f30330">This game is invitation-only until further notice.</p>
+
+</body>
+</html>

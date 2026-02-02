@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/styles/gameBtns.css">
+    <!-- does not redirect to demo -->
+    <script>
+        // all game pages uses this same function
+        function downloadThis() {
+            window.location.href = "gamefiles/Cal's Adventure.zip"; // download this game - format is "gamefiles/GAME.zip" where "GAME" is this game
+            //window.location.href = "/error.html"; // if this game is not yet added
+        }
+    </script>
+    <script src="../UniVens.js"></script>
+    <title>Cal's Adventure – Venison</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <button type="button" onclick="ToGames()">Back to Games</button>
+    <h1>Cal's Adventure</h1>
+    <img src="game_logos/CalsAdventure_icon.png" style="width:64px;height:64px;" alt="Cal's Adventure"> <!-- can also use "/games/game_logos/..." -->
+    <p style="font-size: 150%;">
+        This game follows Cal, a green bean-shaped character who must find the portals while avoiding the red blocks and enemy.
+        Unlock fancy hats as you play!
+    </p>
+    <br>
+    <button id="dloadBtn" type="button" onclick="downloadThis()">Click to Download</button>
+    <p>This version can be played until <i>December 31, 2027</i>.</p>
+    <br>
+    <!--<p>You are currently viewing the full version of this game. To view the demo version, click <a href="./vgm-07.html">here</a>.</p>-->
+    <!--
+    <table style="width:90%">
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    -->
+    <!--
+        You are currently viewing the full version of this game. To view the demo version, click here.
+        You are currently viewing the demo version of this game. To view the full version, click here.
+    -->
+
+</body>
+</html>

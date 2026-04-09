@@ -1,26 +1,27 @@
 // JavaScript source code
+let topLevel = "" // topLevel is "siteName"
 function ToHomePage() {
     //document.getElementById("introPar").innerHTML = "This button takes you home.";
-    window.location.href = "/";
+    window.location.href = topLevel + "/";
 }
 function ToLogin() {
-    window.location.href = "/login/login.php";
+    window.location.href = topLevel + "/login/login.php";
 }
 function ToRegister() {
-    window.location.href = "/login/register.php";
+    window.location.href = topLevel + "/login/register.php";
 }
 function ToProfile() {
-    window.location.href = "/profile/myProfile.php";
+    window.location.href = topLevel + "/profile/myProfile.php";
     //window.location.href = "#";
 }
 function ToGames() {
-    window.location.href = "/games";
+    window.location.href = topLevel + "/games";
 }
 function AboutPage() {
-    window.location.href = "/about.html";
+    window.location.href = topLevel + "/about.html";
 }
 function RaiseErrorPage() {
-    window.location.href = "/error.html";
+    window.location.href = topLevel + "/error.html";
 }
 function BackToGames() {
     // is never called, use ToGames instead

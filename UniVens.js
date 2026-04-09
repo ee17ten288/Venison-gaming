@@ -15,7 +15,7 @@ function ToProfile() {
     //window.location.href = "#";
 }
 function ToGames() {
-    window.location.href = topLevel + "/games";
+    window.location.href = "/games";
 }
 function AboutPage() {
     window.location.href = topLevel + "/about.html";

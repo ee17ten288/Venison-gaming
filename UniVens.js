@@ -2,7 +2,7 @@
 var topLevel = "Venison-gaming" // topLevel is "siteName"
 function ToHomePage() {
     //document.getElementById("introPar").innerHTML = "This button takes you home.";
-    window.location.href = topLevel + "/";
+    window.location.href = "/";
 }
 function ToLogin() {
     window.location.href = topLevel + "/login/login.php";

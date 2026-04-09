@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        button {
+            font-family: Verdana;
+            width: 200px;
+            padding: 10px;
+            background-color: #66AA55;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #339900;
+            }
+
+        #venLogo {
+            width: 180px;
+            height: 180px;
+            float: right;
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #604800;
+            color: white;
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                width: auto;
+                margin: 10px;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                width: auto;
+                margin: 1%;
+                text-align: center;
+            }
+
+            #venLogo {
+                width: 300px;
+                height: 300px;
+                float: none;
+                margin: 30px;
+            }
+        }
+    </style>
+    <script src="/UniVens.js"></script>
+    <title>About Venison</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <img id="venLogo" src="\Venison_Logo.png" alt="Venison">
+    <h1>About Venison</h1>
+    <p>Venison is developing game developers. Despite its name, Venison is not about deer or actual venison.</p>
+    <button type="button" onclick="ToHomePage()">Home Page</button>
+    <div style="margin-top: 90px;"></div>
+    <footer>
+        <p><a href="/about.html" style="color:white"><i>About Venison</i></a></p>
+        <p>&copy; 2026 Venison. All rights reserved.</p>
+    </footer>
+</body>
+    
+</html>

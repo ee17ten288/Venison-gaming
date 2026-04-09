@@ -2,10 +2,11 @@
 <html lang="en-US">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <style>
         body {
             width: 100%;
+            margin: 0 auto;
         }
 
         button {
@@ -23,53 +24,68 @@
                 background-color: #339900;
             }
 
-        #venLogo{
-            width:300px; 
-            height:300px; 
-            margin:10px;
+        #venLogo {
+            width: 300px;
+            height: 300px;
+            float: none;
+            margin: 10px;
         }
-        
+
+        #aboutBtn {
+            width: 60%;
+            padding: 10px;
+        }
+
         .profWindow {
-            width: 100%;
+            width: 0px; /* formerly 100% */
             min-height: 144px;
             padding: 20px;
             background-color: #CFFF45;
             border: 3px solid black;
             border-radius: 12px;
             vertical-align: top;
-            float: none; 
+            float: none;
+            display: none; /* remove this on the main site */
         }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #604800;
+            color: white;
+        }
+
         @media screen and (min-width: 600px) {
             body {
-                width: 900px; 
+                width: 900px;
                 margin: 0 auto;
             }
-            #venLogo{
-                width:300px; 
-                height:300px; 
-                float:left; 
-                margin:10px;
+
+            #venLogo {
+                width: 300px;
+                margin: 10px;
             }
+
+            #aboutBtn {
+                width: 250px;
+                padding: 10px;
+            }
+
             .profWindow {
-            width: 450px;
-            height: 144px;
-            padding: 20px;
-            margin: 72px 0px;
-            background-color: #CFFF45;
-            border: 3px solid black;
-            border-radius: 8px;
-            vertical-align: top;
-            float: right; 
-            display: inline-block;
+                width: 450px;
+                height: 144px;
+                padding: 20px;
+                margin: 72px 0px;
+                background-color: #CFFF45;
+                border: 3px solid black;
+                border-radius: 8px;
+                vertical-align: top;
+                float: right;
+                display: inline-block;
             }
         }
     </style>
-    <script>
-        function changePar() {
-            document.getElementById("introPar").innerHTML = "You pressed my button!";
-        }
-    </script>
-    <script src="UniVens.js"></script>
+    <script src="/UniVens.js"></script>
     <title>Venison</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
@@ -79,18 +95,38 @@
     <div style="width:100%; min-height:320px; vertical-align:top;">
         <img id="venLogo" src="Venison_Logo.png" alt="Venison">
         <div class="profWindow">
-            <!--<h2>Profile Section</h2>-->
             <p id="welcome">You are using Venison as: <b>Guest</b>.</p>
+            <!--<a href="/login/unavailable.html"><button>Login/Register</button></a>-->
         </div>
     </div>
-    
+
+
     <div style="text-align: center; vertical-align:top;">
         <!-- Intro -->
-        <p id="introPar">Venison is a developing game developer. To see the games available, click on "Go to Games"</p>
+        <p id="introPar">Venison is developing game developers. To see the games available, click on "Go to Games"</p>
         <button type="button" onclick="ToGames()" style="width: 75%; font-size:300%; ">Go to Games</button>
     </div>
+    <hr />
+    <div style="text-align: center; vertical-align:top;">
+        <!-- About -->
+        <!-- <p id="aboutPar">To learn more about Venison, click on "About" <br> You can also go to the About page by clicking on <i>About Venison</i> at the bottom of the page.</p> -->
+        <p id="aboutPar">To learn more about Venison, click on <i>About Venison</i> at the bottom of the page.</p>
+        <!--<button id="aboutBtn" type="button" onclick="AboutPage()" style="font-size:150%; ">About</button> -->
+        <p id="aboutPar">To go back to this page, click the <i>Home Page</i> button or on the Venison logo.</p>
+    </div>
+    <!--
+    <div>
+        <h2>Section 1</h2>
+    </div>
+    <div>
+        <h2>Section 2</h2>
+    </div>
+    -->
+    <div style="margin-top: 90px;"></div>
+    <footer>
+        <p><a href="/about.html" style="color:white"><i>About Venison</i></a></p>
+        <p style="font-size: 75%;">&copy; 2026 Venison. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
-
-
-

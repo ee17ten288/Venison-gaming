@@ -1,5 +1,6 @@
 // JavaScript source code
-var topLevel = "/Venison-gaming" // topLevel is "siteName"
+// var topLevel = "/Venison-gaming" // topLevel is "siteName"
+var topLevel = "" // left blank on purpose
 function ToHomePage() {
     //document.getElementById("introPar").innerHTML = "This button takes you home.";
     window.location.href = topLevel + "/";
